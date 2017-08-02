@@ -1,0 +1,246 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>treeRoute</title>
+
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Work+Sans:100,300,400" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="images/treeroute-fav.ico">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="images/treeroute-fav.ico">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="styles/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/style.css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/materialize.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/materialize.js"></script>
+    <!-- endbuild -->
+  </head>
+    <body>
+      <div id="index-banner" class="parallax-container valign-wrapper">
+        <nav id="navigation" class="navbar-fixed" role="navigation">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="images/treeroute-logo.svg"></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="text-colour" href="#about">What we do</a></li>
+
+              <!-- Modal Trigger -->
+              <li><a id="main-cta" class="waves-effect btn" href="#modal-form">Get in touch</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
+
+        <div role="navigation">
+          <div class="nav-wrapper container">
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="#about">What we do</a></li>
+
+              <!-- Modal Trigger -->
+              <li><a id="sidenav-cta" class="waves-effect btn" href="#modal-form">Get in touch</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section no-pad-bot valign">
+            <div class="row">
+              <div class="col s12 m10 l6">
+                <div id="hero-content">
+                  <img src="images/treeroute-fav.svg">
+                  <h2>Hello World. <br /> <span class="blue-skies">Literally.</span></h2>
+                  <h5 id="strapline" class="col s12 light stormy-skies-text">
+                    A travel search company, without the searching.
+                  </h5>
+                  <p class="col m10 l10">
+                    We are not just any travel search company. We find you your cheapest travel, in just one search. Want to know how?
+                    Scroll down to find out.
+                  </p>
+                  <i id="down-arrow" class="material-icons floating blue-skies">keyboard_arrow_down</i>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="hero-img" class="parallax"><img src="images/plane-sky.jpg" alt="flight path of aeroplanes"></div>
+      </div>
+
+      <!-- Contact Form Modal Structure -->
+      <div id="modal-form" class="modal modal-fixed-footer">
+        <form action="//formspree.io/info@treeroute.co.uk" method="post">
+          <div class="modal-content row center">
+            <h5>Discover how we can save you time &amp; money on your travel searches.</h5>
+            <p>
+              Complete the form below to send us your details and someone will be in touch shortly to discuss how we can help you.
+            </p>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input placeholder="First Name" id="first_name" name="first_name" type="text" class="validate" required />
+                <label for="first_name" data-error="Apologies, something isn't quite right here" data-success="Thank you, that looks right"></label>
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Surname" id="surname" name="surname" type="text" class="validate" required />
+                <label for="surname" data-error="Apologies, something isn't quite right here" data-success="Thank you, that looks right"></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input placeholder="Email" id="email" name="email" type="email" class="validate" required />
+                <label for="email" data-error="Apologies, something isn't quite right here" data-success="Thank you, that looks right"></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">phone</i>
+                <input placeholder="Telephone" id="telephone" name="telephone" type="tel" class="validate" required />
+                <label for="telephone" data-error="Apologies, something isn't quite right here" data-success="Thank you, that looks right"></label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" id="signup" class="modal-action waves-effect waves btn-flat blue-skies" value="send">Send</button>
+          </div>
+        </form>
+      </div>
+      <!-- END Contact Form Modal Structure -->
+
+      <!-- On Submit Message -->
+      <div id="form-submit" class="modal"></div>
+      <!-- END On Submit Message -->
+
+      <div class="container">
+        <div class="section">
+
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center blue-skies"><i class="material-icons">code</i></h2>
+                <h5 class="center">Artificial Intelligence</h5>
+
+                <p class="center light">
+                  We use the latest in machine learning technology that enables us to remove the challenges of booking a complex itinerary. We are able to search multidimensionally whilst always returning the lowest price to you.
+                </p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center blue-skies"><i class="material-icons">schedule</i></h2>
+                <h5 class="center">Instantaneous Results</h5>
+
+                <p class="center light">
+                  Because our algorithm does the searching, this means you don't have to. To search every combination of your travel preferences takes a lot of human time.
+                  Our algorithm can do all of this, and return accurate results, in under 30 seconds.
+                </p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center blue-skies"><i class="material-icons">flight_takeoff</i></h2>
+                <h5 class="center">A Truely Bespoke Travel Concierge</h5>
+
+                <p class="center light">
+                  Because your preferences matter to you, they matter to us. Our results will
+                  never compromise on any aspect of your itinerary. The more flexible you are, the cheaper the results.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="parallax-container valign-wrapper">
+        <div class=" container section no-pad-bot">
+          <div>
+            <div class="row center flex">
+              <div id="about" class="col s12 m12 l6">
+                <h4>Welcome to the next level of travel search.</h4>
+                <p class="center light">
+                  treeRoute is great at finding you the cheapest price to travel to your chosen destination, in just one search.
+
+                  Whether this is a long weekend in Europe, a two week holiday in Japan or a complex multi-destination trip, you tell us where you would like to go and your preferred date range, and we do the rest.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parallax"><img src="images/blue-sea.jpg" alt="Plane in the sky"></div>
+      </div>
+
+      <footer class="page-footer stormy-skies">
+        <div class="container">
+          <div class="row">
+            <div id="social-content" class="col l3 s12">
+              <h5 class="white-text">Social</h5>
+              <ul id="social-media">
+                <li><a id="instagram" class="white-text social-media-icon" href="https://www.instagram.com/treeroutetravel/" target="_blank"><img src="images/instagram.png" alt="Instagram logo"></a></li>
+                <li><a id="facebook" class="white-text social-media-icon" href="https://www.facebook.com/treeRoute/" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+                <li><a id="twitter" class="white-text social-media-icon" href="https://twitter.com/treeRouteTravel" target="_blank"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+              </ul>
+            </div>
+            <div id="contact" class="col l3 s12">
+              <h5 class="white-text">Contact</h5>
+              <ul>
+                <li><i class="white-text material-icons">email</i><a class="white-text contact-icon" href="mailto:taniapersonaltraining@gmail.com">info@treeroute.co.uk</a></li>
+                <!-- Modal Trigger -->
+                <li><a id="second-cta" class="waves-effect waves-light btn" href="#modal-form">Or use our contact form</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2014-2017 treeRoute ltd, All rights reserved.
+          </div>
+        </div>
+      </footer>
+
+    <!--  Scripts-->
+      <script src="scripts/init.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/materialize.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/custom.js -->
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/formspree.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

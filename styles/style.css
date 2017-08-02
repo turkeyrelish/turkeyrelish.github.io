@@ -1,0 +1,334 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+   font-family: "Work Sans", sans-serif;
+   font-weight: 100;
+ }
+
+ .blue-skies {
+   color: #46A6DC !important;
+ }
+
+ .blue-skies-background {
+   background-color: #46A6DC !important;
+ }
+
+ .stormy-skies {
+   background-color: #2D2E38 !important;
+ }
+
+ .stormy-skies-text {
+   color: #2D2E38 !important;
+ }
+
+ nav {
+   /*position: fixed;*/
+   /*top: 0;*/
+ }
+
+ nav#navigation {
+  background-color: rgba(45, 46, 56, 0);
+  box-shadow: none;
+  position: fixed;
+  top: 0;
+ }
+
+/*nav ul a {
+  color: #46A6DC !important;
+}*/
+
+p {
+  line-height: 2rem;
+}
+
+h4 {
+  font-weight: 100 !important;
+}
+
+.button-collapse {
+  color: #46A6DC;
+}
+
+/*.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}*/
+
+#down-arrow {
+  font-size: 4rem;
+  text-align: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  #down-arrow {
+    width: 100%;
+  }
+}
+
+/* floating animation */
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(20%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);
+	}
+	50% {
+		-webkit-transform: translateY(20%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}
+
+/* CTAs */
+#main-cta {
+  background-color: #46A6DC;
+  color: #ffffff !important;
+  text-transform: none;
+}
+
+#main-cta:hover {
+  background-color: rgba(70, 166, 220, 0.6);
+  color: #ffffff !important;
+}
+
+#sidenav-cta {
+  background-color: #46A6DC;
+}
+
+#sidenav-cta:hover {
+  background-color: rgba(70, 166, 220, 0.8) !important;
+  color: #ffffff !important;
+}
+
+#second-cta {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+  margin-top: 1em;
+}
+
+#second-cta:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Modal Form */
+#radio-email-label {
+  margin-top: 1em;
+}
+
+.modal .modal-content {
+  padding: 1rem 4rem 0 4rem;
+}
+
+#modal-form p,
+#modal-form h4 {
+  text-align: center;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=tel]:focus {
+  border-bottom: 1px solid #46A6DC !important;
+  box-shadow: 0 1px 0 0 #46A6DC !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #46A6DC !important;
+}
+
+#preferred-method p {
+  text-align: left;
+}
+
+/* Form submit modal */
+#form-submit-message {
+  text-align: center;
+  height: 14rem;
+}
+
+/* flex */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sign up form */
+#signup:hover {
+  background-color: #46A6DC;
+  color: #1d1d1d !important;
+}
+
+/* Main Page */
+#index-banner {
+  height: 100vh;
+}
+
+#hero-content {
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 490px) and (min-width: 320px)  {
+  #hero-content {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+#hero-content img {
+  width: 3rem;
+}
+
+@media all and (max-width: 320px) {
+  #hero-content img {
+    margin-top: 5rem;
+  }
+}
+
+#hero-content h2 {
+  margin: 3rem 0 0 0;
+}
+
+@media all and (max-width: 320px) {
+  #hero-content h2 {
+    font-size: 3rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #hero-content p {
+    margin-bottom: 0;
+  }
+}
+
+#logo-container {
+  width: 12rem;
+}
+
+#title {
+  font-family: "courier new";
+  margin: 0;
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 375px) {
+ #title {
+    font-size: 3.5rem;
+  }
+}
+
+#strapline {
+  font-size: 1.6rem;
+  padding-left: 0;
+}
+
+#about {
+  padding: 1rem 4rem 1rem 4rem;
+  background-color: rgba(45, 46, 56, 0.9);
+  color: #ffffff;
+  margin: 0;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 375px) {
+  #about {
+    padding: 1rem;
+  }
+}
+
+/* footer */
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 1em;
+  width: 14em;
+}
+
+#social-content {
+  width: 11rem;
+  margin-right: 6rem;
+}
+
+#social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media-icon img {
+  width: 2.5rem;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin-top: 0 !important;
+}
+
+.contact-icon {
+  padding-left: 1em;
+  vertical-align: top;
+}
+
+#contact ul li {
+  width: 300px;
+}
